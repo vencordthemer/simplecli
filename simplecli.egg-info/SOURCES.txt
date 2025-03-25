@@ -1,0 +1,12 @@
+README.md
+setup.py
+simplecli/__init__.py
+simplecli/cli.py
+simplecli/command.py
+simplecli/interactive.py
+simplecli/menu.py
+simplecli/utils.py
+simplecli.egg-info/PKG-INFO
+simplecli.egg-info/SOURCES.txt
+simplecli.egg-info/dependency_links.txt
+simplecli.egg-info/top_level.txt
