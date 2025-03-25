@@ -13,7 +13,7 @@ pip install simplecli
 ### Basic Menu
 
 ```python
-from interactivecli import Menu
+from simplecli import Menu
 
 # Create a menu
 menu = Menu("Welcome to the CLI!")
@@ -30,7 +30,7 @@ result = menu.run()
 ### Menu with Callbacks
 
 ```python
-from interactivecli import Menu
+from simplecli import Menu
 
 def option1_action(data):
     print("You selected Option 1!")
@@ -56,7 +56,7 @@ print(f"Result: {result}")
 ### Simple Menu Helper
 
 ```python
-from interactivecli import create_simple_menu
+from simplecli import create_simple_menu
 
 options = ["Red", "Green", "Blue", "Yellow"]
 selected_index = create_simple_menu("Choose a color:", options)
@@ -67,7 +67,7 @@ print(f"You selected: {options[selected_index]}")
 ### Other Utilities
 
 ```python
-from interactivecli import prompt, confirm, clear_screen
+from simplecli import prompt, confirm, clear_screen
 
 # Clear the terminal
 clear_screen()
@@ -102,7 +102,7 @@ Here's a complete example of how to use your module:
 
 ```python
 # example_menu.py
-from interactivecli import Menu, clear_screen
+from simplecli import Menu, clear_screen
 
 def main():
     # Create the main menu
