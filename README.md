@@ -211,7 +211,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Clone the repository
    ```
-   git clone https://github.com/vencordthemer/climenus.git
+   git clone https://github.com/vencordthemer/simplecli.git
    ```
 
 2. Install development dependencies
