@@ -20,7 +20,7 @@ pip install climenus
 ## Quick Start
 
 ```python
-from climenus import Menu
+from cli import Menu
 
 # Create a menu
 menu = Menu("Main Menu")
@@ -39,7 +39,7 @@ menu.run()
 ### Basic Menu
 
 ```python
-from climenus import Menu
+from cli import Menu
 
 # Create a menu
 menu = Menu("Main Menu")
@@ -56,7 +56,7 @@ menu.run()
 ### Nested Menus
 
 ```python
-from climenus import Menu
+from cli import Menu
 
 # Create main menu
 main_menu = Menu("Main Menu")
@@ -101,30 +101,6 @@ menu.add_option("Exit", lambda data: exit())
 menu.run()
 ```
 
-### Menu with Input Validation
-
-```python
-from climenus import Menu
-
-def validate_input(value):
-    try:
-        # Try to convert to integer
-        int(value)
-        return True
-    except ValueError:
-        print("Please enter a valid number")
-        return False
-
-# Create a menu with input validation
-menu = Menu("Input Menu", input_validator=validate_input)
-
-menu.add_option("Option 1", lambda data: print("Option 1 selected"))
-menu.add_option("Option 2", lambda data: print("Option 2 selected"))
-menu.add_option("Exit", lambda data: exit())
-
-# Display the menu
-menu.run()
-```
 
 ## API Reference
 
@@ -225,7 +201,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
    ```
 
 ## License
-```
+
 MIT License
 
 Copyright (c) 2025 VencordThemer
@@ -247,4 +223,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+
